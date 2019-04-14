@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Train Schedule</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4">Choo Choo Train Schedule</h1>
+            <p class="lead">List of trains and their scheduled arrival times</p>
+        </div><br>
+    
+    <div class="card">
+        <h5 class="card-header">Train schedule</h5>
+        <div class="card-body">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">Train Name</th>
+                <th scope="col">Destination</th>
+                <th scope="col">Frequency</th>
+                <th scope="col">Next Arrival</th>
+                <th scope="col">Minutes Away</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+            </tbody>
+          </table>
+        </div>
+    </div><br>
+        <div class="card">
+            <h5 class="card-header">Add Train</h5>
+            <div class="card-body">
+                <form>
+                    <div class="form-group">
+                      <label for="exampleFormControlInput1">Train Name</label>
+                      <input type="text" class="form-control" id="frm_name" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleFormControlSelect1">Train Destination</label>
+                      <input type="text" class="form-control" id="frm_dest" placeholder="Destination">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">First Train Departure Time(hh:mm am/pm)</label>
+                        <input type="time" class="form-control" id="frm_depart">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Departure Frequency in minutes</label>
+                        <input type="number" class="form-control" id="frm_freq" placeholder="Minutes">
+                    </div>
+                    <div>
+                        <button id="submit" type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                  </form>
+                </div>
+            </div>
+      </div>
+  
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
+    <script src="assets/logic.js"></script>
+  
+</body>
+</html>
